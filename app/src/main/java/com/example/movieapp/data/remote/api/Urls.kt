@@ -7,9 +7,12 @@ package com.example.movieapp.data.remote.api
  */
 object Urls {
   const val BASE_URL = "https://api.themoviedb.org/3/"
+  const val BASE_IMG_URL = "https://image.tmdb.org/t/p/w500"
+
 
   object EndPoints {
     const val PEOPLE = "person/popular"
+    const val PEOPLE_DETAIL = "person/{person_id}/images"
   }
 
 }

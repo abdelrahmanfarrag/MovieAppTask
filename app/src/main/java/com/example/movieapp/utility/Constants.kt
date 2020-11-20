@@ -34,6 +34,7 @@ class Constants {
       const val API_KEY = "api_key"
       const val API_LANGUAGE = "language"
       const val API_PAGE = "page"
+      const val IMAGES = "images"
     }
 
     object VALUES {

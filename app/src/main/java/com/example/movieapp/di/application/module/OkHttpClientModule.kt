@@ -34,13 +34,11 @@ class OkHttpClientModule {
   @Provides
   @ApplicationScope fun providesGeneralOkHttpClient(
     loggingInterceptor: HttpLoggingInterceptor,
-    networkInterceptor: NetworkInterceptor,
-    urlInterceptor : Interceptor
+    networkInterceptor: NetworkInterceptor
   ): OkHttpClient {
     return getOkHttpClientBuilder()
       .addInterceptor(networkInterceptor)
       .addInterceptor(loggingInterceptor)
-      .addInterceptor(urlInterceptor)
       .build()
   }
 

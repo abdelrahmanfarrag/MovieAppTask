@@ -7,6 +7,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.movieapp.MovieApplication
 import com.example.movieapp.di.presentation.activity.ActivitySubComponent
+import com.example.movieapp.presentation.Layout
 import com.example.movieapp.utility.LanguageManager
 
 /**
@@ -27,6 +28,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     LanguageManager.attach(this)
+    setContentView(getLayoutId()!!)
     super.onCreate(savedInstanceState)
     setupInjection(activitySubComponent)
   }
@@ -58,6 +60,6 @@ abstract class BaseActivity : AppCompatActivity() {
 
   protected open fun setupInjection(component: ActivitySubComponent) {}
   protected open fun setupToolbar() {}
-
+  private fun getLayoutId(): Int? = javaClass.getAnnotation(Layout::class.java)?.value
   protected abstract fun afterViewsInstantiated(savedInstanceState: Bundle?)
 }
