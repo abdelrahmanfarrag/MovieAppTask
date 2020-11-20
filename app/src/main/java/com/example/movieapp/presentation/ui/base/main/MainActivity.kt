@@ -11,10 +11,10 @@ import com.example.movieapp.presentation.Layout
 import com.example.movieapp.presentation.common.ResourceState
 import com.example.movieapp.presentation.ui.base.BaseActivity
 import com.example.movieapp.presentation.ui.base.main.adapter.PeopleAdapter
+import com.example.movieapp.presentation.ui.base.main.details.PeopleDetailBottomSheetDialog
 import com.example.movieapp.utility.extensions.endlessScrolling
 import com.example.movieapp.utility.extensions.getViewModel
 import com.example.movieapp.utility.extensions.snackBarSettings
-import com.example.movieapp.utility.extensions.toast
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import javax.inject.Inject
@@ -114,9 +114,6 @@ class MainActivity : BaseActivity() {
   private fun whenAPersonIsClickedShowBottomSheetDialogToViewItsDetails(id: Int) {
     mainViewModel.peopleId = id
     mainViewModel.loadPeopleDetails()
-//    toast("$id")
-//    val detailSheetDialog = PeopleDetailBottomSheetDialog.newInstance()
-//    detailSheetDialog.show(supportFragmentManager, "People detail")
   }
 
   private fun createSnackBar(isLoading: Boolean) {
