@@ -9,8 +9,6 @@ import io.reactivex.Observable
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 fun RxPermissions.requestPermission(vararg permission: String): Observable<Boolean> = request(*permission)
 

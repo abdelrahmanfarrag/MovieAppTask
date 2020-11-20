@@ -1,5 +1,9 @@
 package com.example.movieapp.di.application.module
 
+/**
+ * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
+ */
+
 import com.example.movieapp.data.remote.interceptor.NetworkInterceptor
 import com.example.movieapp.di.application.scope.ApplicationScope
 import com.example.movieapp.utility.extensions.isNetworkAvailable
@@ -21,12 +25,6 @@ import okhttp3.logging.HttpLoggingInterceptor.Level
 import java.io.IOException
 import java.net.SocketTimeoutException
 import java.util.concurrent.TimeUnit.SECONDS
-
-/**
- * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
- */
 
 @Module()
 class OkHttpClientModule {

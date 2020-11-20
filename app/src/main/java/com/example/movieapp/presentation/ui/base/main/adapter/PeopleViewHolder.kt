@@ -13,8 +13,6 @@ import kotlinx.android.synthetic.main.item_people.view.peopleProfileImageView
 
 /**
  * Authored by Abdelrahman Ahmed on 20 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 class PeopleViewHolder(itemView: View, private val peopleClick: (Int) -> Unit) :
   BaseViewHolder<People.PeopleResult>(itemView) {

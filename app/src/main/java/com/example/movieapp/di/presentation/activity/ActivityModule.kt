@@ -1,5 +1,6 @@
 package com.example.movieapp.di.presentation.activity
 
+import android.content.Context
 import com.example.movieapp.data.remote.Validator
 import com.example.movieapp.data.remote.api.Api
 import com.example.movieapp.di.presentation.scopes.PerActivity
@@ -9,8 +10,6 @@ import dagger.Provides
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 @Module
 class ActivityModule {
@@ -19,6 +18,7 @@ class ActivityModule {
   @PerActivity
   fun providesMainRepository(
     api: Api,
-    validator: Validator
-  ) = MainRepository(api, validator)
+    validator: Validator,
+    context: Context
+  ) = MainRepository(api, validator, context)
 }

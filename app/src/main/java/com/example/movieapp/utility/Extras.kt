@@ -12,8 +12,6 @@ import com.example.movieapp.R
 
 /**
  * Authored by Abdelrahman Ahmed on 20 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
  fun downloadFile(fileUrl: String, context: Context) {
   val request = DownloadManager.Request(Uri.parse(fileUrl))

@@ -7,8 +7,6 @@ import java.io.IOException
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 abstract class NetworkInterceptor : Interceptor {
 

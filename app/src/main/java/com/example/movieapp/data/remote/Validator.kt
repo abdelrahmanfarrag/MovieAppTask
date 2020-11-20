@@ -9,8 +9,6 @@ import javax.inject.Inject
 
 /**
  * Authored by Abdelrahman Ahmed on 20 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 class Validator @Inject constructor(private val jsonResponse: Gson) {
 

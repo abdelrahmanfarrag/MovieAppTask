@@ -7,8 +7,6 @@ import com.wajahatkarim3.easyvalidation.core.view_ktx.validUrl
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 fun Context.openUrl(url: String) {
   if (!url.validUrl()) return

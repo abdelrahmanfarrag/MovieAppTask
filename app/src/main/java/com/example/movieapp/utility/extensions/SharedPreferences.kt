@@ -6,8 +6,6 @@ import android.content.SharedPreferences
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 inline fun <reified T> SharedPreferences.get(key: String, defaultValue: T): T {
   when (T::class) {

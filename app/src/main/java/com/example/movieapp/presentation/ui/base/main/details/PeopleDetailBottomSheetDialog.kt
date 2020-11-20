@@ -10,7 +10,6 @@ import android.view.ViewGroup
 import android.view.ViewTreeObserver
 import android.widget.FrameLayout
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.example.movieapp.R
 import com.example.movieapp.data.model.Images
@@ -25,8 +24,6 @@ import kotlinx.android.synthetic.main.people_detail_bottom_sheet.peopleDetailRec
 
 /**
  * Authored by Abdelrahman Ahmed on 20 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 class PeopleDetailBottomSheetDialog : BottomSheetDialogFragment() {
 
@@ -62,10 +59,7 @@ class PeopleDetailBottomSheetDialog : BottomSheetDialogFragment() {
           CoordinatorLayout.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.MATCH_PARENT
-          );
-//        val newHeight = activity?.window?.decorView?.measuredHeight
-//        val viewGroupLayoutParams = bottomSheet.layoutParams
-//        viewGroupLayoutParams.height = (newHeight!!)
+          )
       }
     })
     dialogView = view
@@ -97,10 +91,10 @@ class PeopleDetailBottomSheetDialog : BottomSheetDialogFragment() {
         if (::rx.isInitialized)
           downloadFile(url, this.context!!)
         else
-          Toast.makeText(this.context!!, "Something went wrong", Toast.LENGTH_LONG).show()
+          Toast.makeText(this.context!!, getString(R.string.error), Toast.LENGTH_LONG).show()
 
       } else {
-        Toast.makeText(this.context!!, "Please Apply Permission", Toast.LENGTH_LONG).show()
+        Toast.makeText(this.context!!, getString(R.string.apply_permission), Toast.LENGTH_LONG).show()
       }
     }
   }

@@ -8,8 +8,6 @@ import javax.inject.Inject
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 class NullOnEmptyConverterFactory @Inject constructor() : Converter.Factory() {
 

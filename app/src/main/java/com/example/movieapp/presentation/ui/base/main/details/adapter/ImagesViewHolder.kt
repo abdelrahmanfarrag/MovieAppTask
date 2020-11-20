@@ -9,8 +9,6 @@ import com.example.movieapp.utility.extensions.loadWithoutPlaceHolder
 
 /**
  * Authored by Abdelrahman Ahmed on 20 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 class ImagesViewHolder(itemView: View,private val downloadClick : (String)->Unit) : BaseViewHolder<String>(itemView) {
   private val image = itemView.findViewById<ImageView>(R.id.peopleGridImageView)

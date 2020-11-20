@@ -8,8 +8,6 @@ import retrofit2.Retrofit
 
 /**
  * Authored by Abdelrahman Ahmed on 19 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 @Module(includes = [NetworkModule::class])
 class ApiModule {

@@ -7,8 +7,6 @@ import com.example.movieapp.di.application.component.DaggerAppComponent
 
 /**
  * Authored by Abdelrahman Ahmed on 20 Nov, 2020.
- * Contact: afarrag@youxel.com
- * by :YOUXEL
  */
 class MovieApplication : Application() {
 

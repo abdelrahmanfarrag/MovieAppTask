@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <string name="app_name">MovieApp</string>
+
+  <string name="loading">جاري التحميل....</string>
+  <string name="loaded_success">تم التحميل</string>
+<string name="error">حدث خطأ ما</string>
+  <string name="apply_permission">من فضلك اسمح لتحميل الصورة</string>
 
 </resources>
